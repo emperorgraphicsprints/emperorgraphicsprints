@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.up {
+   margin-top:0; 
+   position: relative;
+  }
+
+.top {
+    position: absolute;
+    top: 1;
+    z-index: 155;
+    width: 100%;
+}
+  
+
+.inner1 {
+      background: linear-gradient(to top, rgb(79, 55, 45), rgba(235, 104, 65, 0.6)), url(../img/petition.jpg);
+    }
+    
+.inner2 {
+        background: linear-gradient(to top, rgb(1, 7, 35), rgba(60, 57, 240, 0.6)), url(../img/view-petition.jpeg);
+    }
+.inner1, .inner2 {
+    height: 90vh;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .contact-banner {
+    background: linear-gradient(to top, rgb(79, 55, 45), rgba(235, 104, 65, 0.6)), url(../img/petition.jpg);
+    position: relative;
+  }
+
+  .banner { 
+    height: 60vh;
+    width: auto;
+    background-size: cover;
+    background-position: center center;
+  }
+
+ 
+.four {
+    background-color: #edc951;
+}
+
+
+/* View Petition Section  */
+.view-petition{
+    background: linear-gradient(to top, rgb(79, 55, 45), rgba(235, 105, 65, 0.9)), url(../img/petition.jpg);
+    padding: 10px;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.box {
+    width: 300px;
+    box-shadow: 20px 2px 30px rgba(0, 0, 0, 0.2);
+    
+}
+
+.box1 {
+    width: 100%;
+}
+
+.petition-img {
+    height: 300px;
+}
+
+.petition-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.emperor {
+    color: #f9f5ea;
+    font-weight: 700;
+
+}
+
+  
