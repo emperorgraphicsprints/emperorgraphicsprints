@@ -9,6 +9,7 @@
     <title>Online Petition - The Platform for Change</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="assets/css/lightslider.css">
     <link rel="stylesheet" href="resources/css/responsive.css">
@@ -111,14 +112,14 @@
     <!-- Carousel Start Here -->
 
     <!-- Start a petition section  -->
-          <section class="container mb-5" id="startApetition">
+          <section class="container mb-5" data-aos="zoom-in-left" data-aos-duration="600" id="startApetition">
             <div class="row">
                 <div class="col-md-7"> 
-                    <h2 class="text-center pt-5">Write a petition Now!</h2>
+                    <h2 class="text-center pt-5"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">Write a petition Now!</h2>
 
                     
             <!-- Start a petition form begin here -->
-                    <form class="row needs-validation px-3" action="index.php" method="post" enctype="multipart/form-data" novalidate>
+                    <form class="row needs-validation px-3" action="index.php" method="post" enctype="multipart/form-data" data-aos="flip-left" data-aos-duration="3000" data-aos-delay="250" novalidate>
 
                     <?php addRecord(); ?>
                 <!-- First name field start here -->
@@ -136,7 +137,7 @@
                 <!-- First name field ends here -->
 
                 <!-- Last name field start here -->
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" data-aos="slide-left" data-aos-duration="3000" data-aos-delay="4000">
                             <div class="form-floating mt-sm-3 mb-3">
 
                                 <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name" required>
@@ -150,8 +151,8 @@
                 <!-- Last name field ends here -->
 
                 <!-- Email Address field start here -->
-                        <div class="col-12">
-                            <div class="form-floating  mb-3">
+                        <div class="col-12" data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="4000">
+                            <div class="form-floating  mb-3" data-aos="slide-right" data-aos-duration="3000">
                                 <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback">Please enter your Email</div>
@@ -161,7 +162,7 @@
                 <!-- Email Address field ends here -->
 
                 <!-- Petition Title field start here -->
-                        <div class="col-12">
+                        <div class="col-12" data-aos="slide-right" data-aos-duration="3000" data-aos-delay="4000">
                             <div class="form-floating mb-3">
 
                                 <input type="text" class="form-control" id="petition-title" name="petition-title" placeholder="Petition Title" required>
@@ -175,7 +176,7 @@
                 <!-- Petition Title field ends here -->
                 
                 <!-- Petition Details start here -->
-                        <div class="col-12 mb-3">
+                        <div class="col-12 mb-3" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="4000">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Leave a comment here" id="petition-details" name="petition-details" style="height: 130px" required></textarea>
                                 <label for="petition-details">Pettition Details</label>
@@ -186,7 +187,7 @@
                 <!-- Petition Details end here -->
 
                 <!-- FIle Input start here -->
-                            <div class="col-12 mb-3">
+                            <div class="col-12 mb-3" data-aos="flip-up" data-aos-duration="3000" data-aos-delay="4000">
                                 <div class="mb-3">
                                     <label for="fileToUpload" class="form-label">Upload Files (Images Only)</label>
                                     <input class="form-control" type="file" name="fileToUpload" id="fileToUpload" required>
@@ -206,7 +207,7 @@
 
             <!-- Petition Image Start Here -->
                 <div class="col-fluid col-md-5">
-                    <img src="resources/img/petition-3.jpeg" alt="Petition Image" style=" width: 100%; overflow: hidden; height: 100%; object-fit: cover;">
+                    <img src="resources/img/petition-3.jpeg" alt="Petition Image" style=" width: 100%; overflow: hidden; height: 100%; object-fit: cover;" data-aos="slide-left" data-aos-duration="1000" data-aos-delay=1250">
                 </div>
             <!-- Petition Image end Here -->
             </div>
@@ -294,8 +295,8 @@
       </main>
 
 
-    
-      
+    <script src="assets/js/aos.js"></script>
+    <script>AOS.init();</script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/validate.js"></script>
 </body>
